@@ -1,0 +1,45 @@
+html, body {
+    background-color: blueviolet;
+    margin: 10;
+}
+
+.container {
+    background-color: cadetblue;
+    border: 10px solid orange;
+    display: flex;
+}
+
+.portfolio {
+    flex: 1;
+}
+
+.container li {
+    list-style-type: none;
+}
+
+.container li a {
+    display: inline-block;
+    padding: 15px;
+    color: brown;
+    font-size: 200%;
+    text-decoration: none;
+}
+
+@media(max-width:600px) {
+    .container {
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container li {
+        text-align: center;
+        flex-basis: 50%;
+    }
+}
+
+@media(max-width:400px) {
+    .container li {
+        flex: 1 1 100%;
+    }
+}
